@@ -1,10 +1,5 @@
 package Valueobjects;
 
-/** 
- * Klasse repräsentiert Mitarbeiter
- *
- */
-
 public class Mitarbeiter extends User {
 	
 	private int mitarbeiterId;
