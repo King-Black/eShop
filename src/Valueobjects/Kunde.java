@@ -9,5 +9,13 @@ public class Kunde extends User {
 		this.kundenId = kundenId;
 		
 	}
+	
+	public int getKundenId(){
+		return this.kundenId;
+	}
+	
+	public void setKundenId(int kundenId){
+		this.kundenId = kundenId;
+	}
 
 }

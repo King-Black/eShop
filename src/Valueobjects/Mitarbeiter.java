@@ -1,5 +1,10 @@
 package Valueobjects;
 
+/** 
+ * Klasse repräsentiert Mitarbeiter
+ *
+ */
+
 public class Mitarbeiter extends User {
 	
 	private int mitarbeiterId;
@@ -8,6 +13,14 @@ public class Mitarbeiter extends User {
 		super(vorName, nachName, passwort);
 		this.mitarbeiterId = mitarbeiterId;
 		
+	}
+	
+	public int getMitarbeiterId(){
+		return this.mitarbeiterId;
+	}
+	
+	public void setMitarbeiterId(int mitarbeiterId){
+		this.mitarbeiterId = mitarbeiterId;
 	}
 
 }
