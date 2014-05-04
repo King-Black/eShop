@@ -70,7 +70,7 @@ public class FilePersistenceManger implements PersistenceManager{
 			verfuegbar = true;
 		
 		// neues Buch-Objekt anlegen und zurückgeben
-		return new Mitarbeiter(name, passwort, verfuegbar);
+		return new Mitarbeiter(Name, passwort, verfuegbar);
 	}
 
 	/**
@@ -83,7 +83,7 @@ public class FilePersistenceManger implements PersistenceManager{
 	 */
 	public boolean speichereMitarbeiter(Mitarbeiter m) throws IOException {
 		// Titel, Passwort und Verfügbarkeit schreiben
-		schreibeZeile(m.getName());
+		schreibeZeile(m.getVorName());
 		schreibeZeile(Integer.valueOf(m.getPasswort()).toString());
 		if (m.isVerfuegbar())
 			schreibeZeile("t");

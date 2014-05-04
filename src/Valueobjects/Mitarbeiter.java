@@ -6,7 +6,7 @@ public class Mitarbeiter extends User {
 	private boolean verfuegbar;
 	
 	
-	public Mitarbeiter(int mitarbeitderId, String vorName, String nachName, String passwort, boolean verfügbar){
+	public Mitarbeiter(int mitarbeitderId, String vorName, String nachName, String passwort, boolean verfuegbar){
 		super(vorName, nachName, passwort);
 		this.mitarbeiterId = mitarbeiterId;
 		this.verfuegbar = verfuegbar;

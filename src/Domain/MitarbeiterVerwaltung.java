@@ -6,7 +6,7 @@ import java.io.IOException;
 
 
 import Exceptions.MitarbeiterExistiertBereitsException;
-import Persistence.FilePersistenceManager;
+import Persistence.FilePersistenceManger;
 import Persistence.PersistenceManager;
 import Valueobjects.Mitarbeiter;
 
@@ -15,7 +15,7 @@ public class MitarbeiterVerwaltung {
 
 	private  Vector<Mitarbeiter> MitarbeiterListe = new Vector<Mitarbeiter>();
 	
-	private FilePersistenceManager pm = new FilePersistenceManager();
+	private FilePersistenceManger pm = new FilePersistenceManger();
 	
 	public void liesDaten(String datei) throws IOException{
 		pm.openForReading(datei);
@@ -66,7 +66,7 @@ public void einfuegen(final Mitarbeiter einMitarbeiter) throws MitarbeiterExisti
 }
 
 public boolean loeschen(Mitarbeiter einMitarbeiter) {
-    // das übernimmt die BuchListe:
+    // das übernimmt die MitarbeiterListe
     return MitarbeiterListe.remove(einMitarbeiter);
 }
 
@@ -80,7 +80,7 @@ public boolean loeschen(Mitarbeiter einMitarbeiter) {
 public Vector<Mitarbeiter> sucheBuecher(final String Name) {
 	final Vector<Mitarbeiter> ergebnis = new Vector<Mitarbeiter>();
 	for (final Mitarbeiter mitarbeiter : MitarbeiterListe) {
-		if (mitarbeiter.getName().equals(Name)) {
+		if (mitarbeiter.getVorName().equals(Name)) {
 			// gefundenes Buch in Suchergebnis eintragen
 		    ergebnis.add(mitarbeiter);
 		}
