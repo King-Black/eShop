@@ -3,11 +3,13 @@ package Valueobjects;
 public class Mitarbeiter extends User {
 	
 	private int mitarbeiterId;
+	private boolean verfuegbar;
 	
-	public Mitarbeiter(int mitarbeitderId, String vorName, String nachName, String passwort){
+	
+	public Mitarbeiter(int mitarbeitderId, String vorName, String nachName, String passwort, boolean verfügbar){
 		super(vorName, nachName, passwort);
 		this.mitarbeiterId = mitarbeiterId;
-		
+		this.verfuegbar = verfuegbar;
 	}
 	
 	public int getMitarbeiterId(){

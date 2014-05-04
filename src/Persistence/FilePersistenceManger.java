@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import persistence.PersistenceManager;
+import Persistence.PersistenceManager;
 import Valueobjects.Mitarbeiter;
 
 public class FilePersistenceManger implements PersistenceManager{

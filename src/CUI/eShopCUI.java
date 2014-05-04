@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 import domain.ShopVerwaltung;
 import domain.UserVerwaltung;
-import exceptions.MitarbeiterExistiertBereitsException;
+import Exceptions.MitarbeiterExistiertBereitsException;
 
 public class eShopCUI {
 	//private ShopVerwaltung shop;

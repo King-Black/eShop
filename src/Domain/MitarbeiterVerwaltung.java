@@ -5,9 +5,9 @@ import java.io.IOException;
 
 
 
-import exceptions.MitarbeiterExistiertBereitsException;
-import persistence.FilePersistenceManager;
-import persistence.PersistenceManager;
+import Exceptions.MitarbeiterExistiertBereitsException;
+import Persistence.FilePersistenceManager;
+import Persistence.PersistenceManager;
 import Valueobjects.Mitarbeiter;
 
 public class MitarbeiterVerwaltung {

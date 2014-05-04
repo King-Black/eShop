@@ -3,7 +3,7 @@ package Domain;
 import java.io.IOException;
 import java.util.Vector;
 
-import exceptions.MitarbeiterExistiertBereitsException;
+import Exceptions.MitarbeiterExistiertBereitsException;
 import Valueobjects.Mitarbeiter;
 
 
@@ -43,8 +43,8 @@ public class UserVerwaltung {
 	}
 
 
-	public void fuegeMitarbeiterEin(String name, int passwort) throws MitarbeiterExistiertBereitsException {
-		Mitarbeiter m = new Mitarbeiter(name, passwort);
+	public void fuegeMitarbeiterEin(int mitarbeitderId, String vorName, String nachName, String passwort, boolean verfügbar) throws MitarbeiterExistiertBereitsException {
+		Mitarbeiter m = new Mitarbeiter(mitarbeitderId, vorName, nachName, passwort, verfügbar);
 		meinMitarbeiter.einfuegen(m);
 	}
 	
